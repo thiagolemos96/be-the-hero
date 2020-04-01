@@ -22,7 +22,9 @@ routes.get('/incidents', IncidentController.index);
 //Cadastra um novo caso
 routes.post('/incidents', IncidentController.create);
 //Detelar um caso
-routes.delete('/incidents/:id', IncidentController.delete)
+routes.delete('/incidents/:id', IncidentController.delete);
+//Lista todos os casos apartir do valor informado
+routes.get('/incidentsByValue', IncidentController.incidentByValue);
 
 
 module.exports = routes;
